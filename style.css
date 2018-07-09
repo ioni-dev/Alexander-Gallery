@@ -2,7 +2,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    background: #E2E2E2;
+    background: white;
     margin: 10px auto;
     position: relative;
 }
@@ -96,6 +96,7 @@ header p{
 
 img{
     width: 100%;
+    border-radius: 5px;
 }
 #button-div{
     display: grid;
