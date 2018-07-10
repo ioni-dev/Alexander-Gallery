@@ -162,6 +162,7 @@ button{
         grid-gap: 15px;
         padding: 0 20px 0 20px;
         justify-content: unset;
+        position: relative;
     }
     #gallery2{  
         grid-template-columns: 1fr;
@@ -169,6 +170,7 @@ button{
         grid-gap: 15px;
         padding: 0 20px 0 20px;
         justify-content: unset;
+        position: relative;
     }    
     #gallery3{
         grid-template-columns: 1fr;
@@ -176,9 +178,10 @@ button{
         grid-gap: 15px;
         padding: 0 20px 0 20px;
         justify-content: unset;
+        position: relative;
     }
     #button-div{
-        display: grid;
+        display: none;
         grid-template-columns: auto;
         grid-gap: 5px;
         position: fixed;
