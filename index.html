@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Montserrat:100" rel="stylesheet">
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-  <!-- or -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <title>Alex Gallery</title>
 </head>
-<body >
+<body>
     <header>
         <p class="title">ALEXANDER JARAMILLO</p>
         <div class="options">
@@ -22,30 +18,36 @@
             <a href="https://www.instagram.com/leexandr" class="opt">instagram</a>
         </div>
     </header>
-      <div class="container animated fadeIn" >
+      <div  id="container" class="container">
+        <div class="floatingDiv" id="control">
+            <button id="close">X</button>
+            <button id="prev"> < </button>
+            <div class="floating-gallery"><img src=""></div>
+            <button id="next">></button>
+        </div>
         <div class="gallery" id="ga">
-            <div  id="img1" ><img src="photos/1.jpg"></div>
-            <div  id="img2"><img src="photos/2.jpg"></div>
-            <div  id="img3"><img src="photos/3.jpg"></div>
-            <div  id="img4"><img src="photos/4.jpg"></div>
-            <div  id="img5"><img src="photos/5.jpg"></div>
-            <div  id="img6"><img src="photos/6.jpg"></div>
+            <div><img class="sectionOne" class="thumbnail" src="photos/1-mini.jpg" data-src="photos/1.jpg"></div>
+            <div><img class="sectionOne" class="thumbnail" src="photos/2-mini.jpg" data-src="photos/2.jpg"></div>
+            <div><img class="sectionOne" class="thumbnail" src="photos/3-mini.jpg" data-src="photos/3.jpg"></div>
+            <div><img class="sectionOne" class="thumbnail" src="photos/4-mini.jpg" data-src="photos/4.jpg"></div>
+            <div><img class="sectionOne" class="thumbnail" src="photos/5-mini.jpg" data-src="photos/5.jpg"></div>
+            <div><img class="sectionOne" class="thumbnail" src="photos/6-mini.jpg" data-src="photos/6.jpg"></div>
         </div>
         <div id="gallery2">
-            <div id="img-1"><img src="photos/7.jpg"></div>
-            <div id="img-2"><img src="photos/8.jpg"></div>
-            <div id="img-3"><img src="photos/9.jpg"></div>
-            <div id="img-4"><img src="photos/10.jpg"></div>
-            <div id="img-5"><img src="photos/11.jpg"></div>
-            <div id="img-6"><img src="photos/12.jpg"></div>
+            <div><img class="sectionTwo" class="thumbnail" src="photos/7-mini.jpg" data-src="photos/7.jpg"></div>
+            <div><img class="sectionTwo" class="thumbnail" src="photos/8-mini.jpg" data-src="photos/8.jpg"></div>
+            <div><img class="sectionTwo" class="thumbnail" src="photos/9-mini.jpg" data-src="photos/9.jpg"></div>
+            <div><img class="sectionTwo" class="thumbnail" src="photos/10-mini.jpg" data-src="photos/10.jpg"></div>
+            <div><img class="sectionTwo" class="thumbnail" src="photos/11-mini.jpg" data-src="photos/11.jpg"></div>
+            <div><img class="sectionTwo" class="thumbnail" src="photos/12-mini.jpg" data-src="photos/12.jpg"></div>
         </div>
-        <div id="gallery3" >
-            <div id="img-1" ><img src="photos/13.jpg"></div>
-            <div id="img-2"><img src="photos/14.jpg"></div>
-            <div id="img-3"><img src="photos/15.jpg"></div>
-            <div id="img-4"><img src="photos/16.jpg"></div>
-            <div id="img-5"><img src="photos/17.jpg"></div>
-            <div id="img-6"><img src="photos/18.jpg"></div>
+        <div id="gallery3" class="z">
+            <div><img class="sectionThree" class="thumbnail" src="photos/13-mini.jpg" data-src="photos/13.jpg"></div>
+            <div><img class="sectionThree" class="thumbnail" src="photos/14-mini.jpg" data-src="photos/14.jpg"></div>
+            <div><img class="sectionThree" class="thumbnail" src="photos/15-mini.jpg" data-src="photos/15.jpg"></div>
+            <div><img class="sectionThree" class="thumbnail" src="photos/16-mini.jpg" data-src="photos/16.jpg"></div>
+            <div><img class="sectionThree" class="thumbnail" src="photos/17-mini.jpg" data-src="photos/17.jpg"></div>
+            <div><img class="sectionThree" class="thumbnail" src="photos/18-mini.jpg" data-src="photos/18.jpg"></div>
         </div>
       </div>  
       
@@ -54,6 +56,7 @@
             <button id="2"></button>
             <button id="3"></button>
         </div>
+    
 </body>
 <script src="script.js"></script> 
 </html>
