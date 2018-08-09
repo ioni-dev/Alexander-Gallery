@@ -5,32 +5,20 @@ document.getElementById("button-div").addEventListener("click", function (e) {
   let gal2 = document.getElementById("gallery2");
   let gal3 = document.getElementById("gallery3");
 
-  if( target.id == '1' ){
-      if( gal1.className == "z" ){
-        gal3.classList.add("hidden");
-        gal2.classList.add("hidden");
-       }else{
-        gal1.className = "z";
-           
-      } 
+  if(target.id == '1'){
+    gal1.classList.remove('hidden');
+    gal2.classList.add('hidden');
+    gal3.classList.add('hidden');
   }else if(target.id == '2'){
-    if(gal2.className == "z"){
-      gal1.classList.remove("z");
-      gal1.classList.add("gallery");
-      gal3.classList.add("hidden");      
-    }else{
-      gal2.className = "z";
-    }  
-  }else if(target.id =='3'){
-    if(gal3.className == "z"){
-      gal1.classList.remove("z");
-      gal2.classList.remove("z");
-      gal1.classList.add("hidden");  
-      gal2.classList.add("hidden"); 
-    }else{
-      gal3.className = "z";
-    }
+    gal1.classList.add('hidden');
+    gal2.classList.remove('hidden');
+    gal3.classList.add('hidden');
+  }else if(target.id == '3'){
+    gal1.classList.add('hidden');
+    gal2.classList.add('hidden');
+    gal3.classList.remove('hidden');
   }
+ 
 });
 
 /*photo selector sectionOne*/
@@ -38,6 +26,7 @@ document.querySelectorAll('.sectionOne').forEach(function(elem){
   let gallery1 = document.getElementById("ga");
   let gallery2 = document.getElementById("gallery2");
   let gallery3 = document.getElementById("gallery3");
+  let btn      = document.getElementById("button-div");
   let controlBtn = document.querySelector(".floatingDiv");
 
     elem.onclick = function selectedElement(){
@@ -49,6 +38,7 @@ document.querySelectorAll('.sectionOne').forEach(function(elem){
      gallery1.classList.toggle("hidden");
      gallery2.classList.add("hidden");
      gallery3.classList.add("hidden");
+     btn.classList.add("hidden");
      controlBtn.classList.toggle("floatingDivActive");
     secOne();
     }
@@ -58,6 +48,7 @@ document.querySelectorAll('.sectionTwo').forEach(function(elem){
   let gallery1 = document.getElementById("ga");
   let gallery2 = document.getElementById("gallery2");
   let gallery3 = document.getElementById("gallery3");
+  let btn      = document.getElementById("button-div");
   let controlBtn = document.querySelector(".floatingDiv");
 
   elem.onclick = function selectedElement(){
@@ -69,6 +60,7 @@ document.querySelectorAll('.sectionTwo').forEach(function(elem){
    gallery1.classList.add("hidden");
    gallery2.classList.toggle("hidden");
    gallery3.classList.add("hidden");
+   btn.classList.add("hidden");
    controlBtn.classList.toggle("floatingDivActive");
    secTwo();
    }
@@ -78,6 +70,7 @@ document.querySelectorAll('.sectionThree').forEach(function(elem){
  let gallery1 = document.getElementById("ga");
  let gallery2 = document.getElementById("gallery2");
  let gallery3 = document.getElementById("gallery3");
+ let btn      = document.getElementById("button-div");
  let controlBtn = document.querySelector(".floatingDiv");
     
  elem.onclick = function selectedElement(){
@@ -90,6 +83,7 @@ document.querySelectorAll('.sectionThree').forEach(function(elem){
   gallery1.classList.add("hidden");
   gallery2.classList.add("hidden");
   gallery3.classList.toggle("hidden");
+  btn.classList.add("hidden");
   controlBtn.classList.toggle("floatingDivActive");
   secThree();
    }
@@ -109,6 +103,8 @@ function secOne(){
   document.getElementById("close").addEventListener('click', e =>{
    let controlBtn = document.querySelector(".floatingDiv");
    let gallery1   = document.getElementById("ga");
+   let btn      = document.getElementById("button-div");
+    btn.classList.remove("hidden");
     gallery1.classList.remove("hidden");
     controlBtn.classList.remove("floatingDivActive")
    });
@@ -147,10 +143,11 @@ function secTwo(){
    /*close action*/
   document.getElementById("close").addEventListener('click', e =>{
     let controlBtn = document.querySelector(".floatingDiv");
-   let gallery1  = document.getElementById("ga");
-   let gallery2   = document.getElementById("gallery2");
-   let gallery3   = document.getElementById("gallery3");
+    let gallery2   = document.getElementById("gallery2");
+    let btn      = document.getElementById("button-div");
+   
    gallery2.classList.remove("hidden");
+   btn.classList.remove("hidden");
    controlBtn.classList.remove("floatingDivActive")
   });
     let prev = document.getElementById("prev");
@@ -192,11 +189,11 @@ function secThree(){
   /*close action*/
   document.getElementById("close").addEventListener('click', e =>{
    let controlBtn = document.querySelector(".floatingDiv");
-   let gallery1   = document.getElementById("ga");
-   let gallery2   = document.getElementById("gallery2");
    let gallery3   = document.getElementById("gallery3");
+   let btn      = document.getElementById("button-div");
    
   gallery3.classList.remove("hidden");
+  btn.classList.remove("hidden");
   controlBtn.classList.remove("floatingDivActive")
   
   });

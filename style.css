@@ -123,7 +123,6 @@ button{
     align-items: center;
     position: absolute;
     z-index: 1;
-    color: red;
 }
 #close{
     grid-column: 3;
@@ -160,7 +159,6 @@ button{
         right: 45%;
         position: absolute;
         top: 620px;
-        
     }
 }
 
@@ -193,7 +191,24 @@ button{
         right: 45%;
         position: absolute;
         top: 180px;
-        
+    }
+    .floatingDivActive{
+        display: grid;
+        grid-template-columns: 40px 600px 40px;
+        grid-template-rows: 18px 390px;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 700px){
+    .floatingDivActive{
+        display: grid;
+    grid-template-columns: 40px 500px 40px;
+    grid-template-rows: 18px 320px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
     }
 }
 @media screen and (max-width: 420px){
@@ -235,5 +250,8 @@ button{
         position: fixed;
         left: 92%;
         
+    }
+    img{
+        pointer-events: none;
     }
 }
