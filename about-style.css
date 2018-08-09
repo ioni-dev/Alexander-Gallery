@@ -2,7 +2,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    background: #E2E2E2;
+    background: #D5D5D5;
     margin: 10px auto;
     position: relative;
 }
@@ -23,16 +23,16 @@ body{
     text-decoration-line: none;
     justify-self: center;
     align-self: center;
-    font-family: 'roboto';
-    font-weight: lighter;
-    
-    font-size: 25px;
     margin-bottom: 40px;
 }
 .options .opt{
     padding-right: 15px;
     text-decoration: none;
-    color: grey;
+    color: rgb(138, 138, 138);
+    border-color: black;
+    font-family: 'roboto';
+    font-size: 20px;
+    letter-spacing: 5px;
 }
 .title{
     font-size: 30px;
@@ -55,9 +55,9 @@ section .p{
     justify-content: center;
     align-items: center;
     font-family: 'roboto';
-    font-weight: lighter;
     text-align: justify;
     font-size: 18px;
+    color: #636060;
 }
 img{
     width: 300px;

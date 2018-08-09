@@ -4,15 +4,14 @@ document.getElementById("button-div").addEventListener("click", function (e) {
   let gal1 = document.getElementById("ga");
   let gal2 = document.getElementById("gallery2");
   let gal3 = document.getElementById("gallery3");
-  let gal4 = document.querySelector(".floating-gallery");
 
   if( target.id == '1' ){
       if( gal1.className == "z" ){
         gal3.classList.add("hidden");
+        gal2.classList.add("hidden");
        }else{
         gal1.className = "z";
-        gal2.classList.add("hidden");
-        gal3.classList.add("hidden");    
+           
       } 
   }else if(target.id == '2'){
     if(gal2.className == "z"){
